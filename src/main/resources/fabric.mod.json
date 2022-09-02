@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "chilaquiles",
+  "version": "${version}",
+
+  "name": "Chilaquiles",
+  "description": "Chilaquiles is a mod of food... super food!",
+  "authors": [
+    "Et3r"
+  ],
+  "contact": {
+    "homepage": "https://twitter.com/et3rmc",
+    "sources": "https://github.com/et3r/chilaquiles-mc-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.et3r.chilaquiles.Chilaquiles"
+    ],
+    "client": [
+      "net.et3r.chilaquiles.ChilaquilesClient"
+    ]
+  },
+  "mixins": [
+    "chilaquiles.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
