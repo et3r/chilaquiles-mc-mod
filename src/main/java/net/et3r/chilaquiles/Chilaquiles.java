@@ -1,5 +1,6 @@
 package net.et3r.chilaquiles;
 
+import net.et3r.chilaquiles.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,6 @@ public class Chilaquiles implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
